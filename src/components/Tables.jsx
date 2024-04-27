@@ -1,13 +1,13 @@
 import Row from "./Row";
 import Column from "./Columns";
-function Tables({ transacts }) {
+function Tables({ transacts}) {
 
   return (
     <>
 
       <table className="table">
         <Column />
-        <Row transacts={transacts} />
+        <Row transacts={transacts}/>
       </table>
     </>
 
