@@ -1,17 +1,22 @@
-function Row({transacts}){
-  const allTransactions = transacts.map((transact, index)=>{
+function Row({ transacts }) {
+  const allTransactions = transacts.map((transact, index) => {
     return (
-      <tr key ={index}>
-      <td>{transact.date}</td>
-      <td>{transact.description}</td>
-      <td>{transact.category}</td>
-      <td>{transact.amount}</td>
-    </tr>
+    <tbody key={index+1}>
+ <tr >
+          <td>{transact.date}</td>
+          <td>{transact.description}</td>
+          <td>{transact.category}</td>
+          <td>{transact.amount}</td>
+        </tr>
+      
+    </tbody>
+       
+
     )
   })
   return (
     <>
-    {allTransactions}
+      {allTransactions}
     </>
   )
 }
