@@ -1,11 +1,11 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
 
 function Search({ search, handleChange }) {
 
   return (
     <div>
       <input type="text"
-        className="form-control"
+        className="form-control" 
         onChange={handleChange}
         placeholder="Search by Description"
         name="search"

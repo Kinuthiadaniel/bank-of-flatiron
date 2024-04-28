@@ -31,7 +31,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("")
 
   function handleSubmits(transactions){
-    setData((data)=>[...data, transactions])
+    setData((data)=>({...data, transactions}))
   }
   function handleChange(e){
 return setSearchTerm(e.target.value)
@@ -54,7 +54,7 @@ return setSearchTerm(e.target.value)
       <div className='container'>
         <Header />
         <Search search={searchTerm} handleChange= {handleChange} />
-        < AddTransaction handleSubmit={handleSubmits}/>
+        < AddTransaction handleSubmits={handleSubmits}/>
         <Tables transacts={filter} />
   
       </div>
