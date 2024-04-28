@@ -10,6 +10,7 @@ function Tables({ transacts}) {
         <Column />
         <Row transacts={transacts}/>
         
+        
       </table>
     </>
 

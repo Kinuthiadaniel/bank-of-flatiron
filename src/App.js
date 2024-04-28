@@ -22,6 +22,12 @@ const transactions = [{
   description: "Food",
   category: "Expense",
   amount: 900,
+},
+{
+  date: "03-12-2016",
+  description: "Rent",
+  category: "Expense",
+  amount: 1900,
 }
 ]
 
@@ -29,18 +35,20 @@ const transactions = [{
 function App() {
   const [data, setData] = useState(transactions)
   const [searchTerm, setSearchTerm] = useState("")
+  
 
-  function handleSubmits(transactions){
-    setData((data)=>({...data, transactions}))
+  function handleSubmitsUpdates(newTransaction) {
+console.log(newTransaction)
+setData([...data, newTransaction])
   }
   function handleChange(e){
-return setSearchTerm(e.target.value)
+ setSearchTerm(e.target.value)
   }
 
-  const filter = data.filter((transaction)=>{
+  const filter = data.filter((transactions)=>{
     
     if(searchTerm.length > 0 ){
-      return transaction.description.toLowerCase().includes(searchTerm.toLowerCase());
+      return transactions.description.toLowerCase().includes(searchTerm.toLowerCase());
     }
     else{
       return true;
@@ -54,7 +62,7 @@ return setSearchTerm(e.target.value)
       <div className='container'>
         <Header />
         <Search search={searchTerm} handleChange= {handleChange} />
-        < AddTransaction handleSubmits={handleSubmits}/>
+        < AddTransaction onSubmits={handleSubmitsUpdates} />
         <Tables transacts={filter} />
   
       </div>
