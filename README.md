@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Bank of Flatiron
+# Description
+The code challenge entailed getting Bank of Flatiron's transactional data from a json mock file  and using the React Library to display the data. The constituents of the application include a search bar where the user can input information and the transactions will be filtered based on the input. The user is able to add their own financial transactional data which is inturn persistently added to the db.json file. The application is built upon the [react](https://reactjs.org/) library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Getting Started
+In order to be able to use this particular repository one needs to have the following:
 
-In the project directory, you can run:
+- A little bit of patience.
 
-### `npm start`
+# Installation
+To be able to use the code in your machine one needs to:
+- Open the terminal on your computer
+- Clone the repo by using the following:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+      git clone git@github.com:Kinuthiadaniel/bank-of-flatiron.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Change directory to the repository folder:
 
-### `npm test`
+        cd bank-of-fatiron.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Open code in text editor:
 
-### `npm run build`
+        code .
+- Ensure that JSON server is installed in your machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+        npm install -g json-server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Running Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After unbundling the project:
 
-### `npm run eject`
+- Run in terminal:
+        
+        npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Run in terminal:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        npm run server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- In a new terminal run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        npm start
 
-## Learn More
+        
+ # Live link of the project
+         
+https://kinuthiadaniel.github.io/bank-of-flatiron/
+         
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Daniel Mwangi
 
-### Code Splitting
+# License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2024 Daniel Mwangi
